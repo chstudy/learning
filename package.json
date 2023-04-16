@@ -1,0 +1,39 @@
+{
+  "name": "learning",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "docs:dev": "vuepress dev docs",
+    "docs:build": "vuepress build docs"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@vssue/api-github-v3": "^1.4.7",
+    "@vssue/vuepress-plugin-vssue": "^1.4.8",
+    "@vuepress-reco/vuepress-plugin-bgm-player": "^1.1.4",
+    "@vuepress/plugin-pwa": "^1.9.7",
+    "vuepress": "^1.9.7",
+    "vuepress-plugin-copyright": "^1.0.2",
+    "vuepress-plugin-cursor-effects": "^1.1.6",
+    "vuepress-theme-reco": "^1.6.17"
+  },
+  "directories": {
+    "doc": "docs"
+  },
+  "dependencies": {
+    "moment": "^2.29.4",
+    "vuepress-plugin-sitemap": "^2.3.1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://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@github.com/chstudy/learning.git"
+  },
+  "bugs": {
+    "url": "https://github.com/chstudy/learning/issues"
+  },
+  "homepage": "https://github.com/chstudy/learning#readme",
+  "description": ""
+}
