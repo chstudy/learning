@@ -13,7 +13,7 @@ module.exports = {
         key: fs.readFileSync(path.resolve(__dirname, './localhost+1-key.pem')),
         cert: fs.readFileSync(path.resolve(__dirname, './localhost+1.pem'))
     },
-    port: '7777',
+    port: '7778',
     head: [
         ['link', {rel: 'icon', href: '/img/chbcjs.png'}],
         ['link', {rel: 'stylesheet', href: '/css/style.css'}],
