@@ -106,7 +106,7 @@ module.exports = {
                     {
                         name: '雪下的时候',
                         artist: '乔家旭',
-                        url: 'http://www.ytmp3.cn/down/76661.mp3',
+                        url: 'http://music.163.com/song/media/outer/url?id=1417143120.mp3',
                         cover: 'https://p1.music.126.net/qTSIZ27qiFvRoKj-P30BiA==/109951165895951287.jpg?param=200y200'
                     },
                     {

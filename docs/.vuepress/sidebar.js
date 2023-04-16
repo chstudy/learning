@@ -1,20 +1,21 @@
 module.exports = {
-    '/guide/guide-java/': require('../guide/guide-java/sidebar'),//Java学习路线
-    '/guide/guide-c/': require('../guide/guide-c/sidebar'),//C学习路线
+    '/language/language-english/': require('../language/language-english/sidebar'),//英语
+    '/language/language-japanese/': require('../language/language-japanese/sidebar'),//日语
+    '/language/language-cantonese/': require('../language/language-cantonese/sidebar'),//粤语
 
-    '/java/java-beginner/': require('../java/java-beginner/sidebar'), //java基础
-    '/java/java-intermediate/': require('../java/java-intermediate/sidebar'), //java基础进阶
-    '/java/java-senior/': require('../java/java-senior/sidebar'), //java进阶
-    '/java/java-web/': require('../java/java-web/sidebar'), //javaWeb
-    '/java/frame/': require('../java/frame/sidebar'), //java框架
-    '/java/microservice/': require('../java/microservice/sidebar'), //分布式/微服务/并发框架
-    '/java/java-projects/': require('../java/java-projects/sidebar'), //Java项目实战
-    '/java/interview/': require('../java/interview/sidebar'), //Java面试题
-    '/java/source-code/': require('../java/source-code/sidebar'), //Java源码系列
+    '/reading/reading-study/': require('../reading/reading-study/sidebar'), //学习成长
+    '/reading/reading-manager/': require('../reading/reading-manager/sidebar'), //管理
+    '/reading/reading-education/': require('../reading/reading-education/sidebar'), //教育
+    '/reading/reading-mind/': require('../reading/reading-mind/sidebar'), //思维
+    '/reading/reading-human/': require('../reading/reading-human/sidebar'), //人性
+    '/reading/reading-expression/': require('../reading/reading-expression/sidebar'), //表达
+    '/reading/reading-psychology/': require('../reading/reading-psychology/sidebar'), //心理学
+    '/reading/reading-marketing/': require('../reading/reading-marketing/sidebar'), //营销
+    '/reading/reading-writing/': require('../reading/reading-writing/sidebar'), //写作
 
-    '/bigdata/hadoop/': require('../bigdata/hadoop/sidebar'), //大数据-hadoop
-    '/bigdata/hive/': require('../bigdata/hive/sidebar'), //大数据-hive
+    '/health/health-sleep/': require('../health/health-sleep/sidebar'), //睡眠管理
+    '/health/health-fitness/': require('../health/health-fitness/sidebar'), //身材管理
 
-    '/php/php-base': require('../php/php-base/sidebar'), //PHP基础
-    '/php/php-projects': require('../php/php-projects/sidebar'), //PHP项目实战
+    '/financial/financial-fund': require('../financial/financial-fund/sidebar'), //基金
+    '/financial/financial-stock': require('../financial/financial-stock/sidebar'), //股票
 }

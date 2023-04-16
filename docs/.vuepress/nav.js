@@ -1,51 +1,57 @@
 module.exports = [
     {text: '主页', link: '/index.html'},
     {
-        text: '学习指南',
+        text: '语言学习',
         items: [
-            {text: 'Java学习路线', link: '/guide/guide-java/'},
-            {text: 'C学习路线', link: '/guide/guide-c/'},
+            {text: '英语', link: '/language/language-english/'},
+            {text: '日语', link: '/language/language-japanese/'},
+            {text: '粤语', link: '/language/guide-cantonese/'},
         ]
     },
     {
-        text: 'Java',
+        text: '读书',
         items: [
-            {text: 'Java基础', link: '/java/java-beginner/'},
-            {text: 'Java基础进阶', link: '/java/java-intermediate/'},
-            {text: 'Java高级进阶', link: '/java/java-senior/'},
-            {text: 'JavaWeb', link: '/java/java-web/'},
-            {text: 'Java主流框架', link: '/java/frame/'},
-            {text: '分布式/微服务/并行架构', link: '/java/microservice/'},
-            {text: 'Java面试系列', link: '/java/interview/'},
-            {text: 'Java项目实战', link: '/java/java-projects/'},
-            {text: '源码系列', link: '/java/source-code/'},
+            {text: '学习成长', link: '/reading/reading-study/'},
+            {text: '管理', link: '/reading/reading-manager/'},
+            {text: '教育', link: '/reading/reading-education/'},
+            {text: '思维', link: '/reading/reading-mind/'},
+            {text: '人性', link: '/reading/reading-human/'},
+            {text: '表达', link: '/reading/reading-expression/'},
+            {text: '心理学', link: '/reading/reading-psychology/'},
+            {text: '营销', link: '/reading/reading-marketing/'},
+            {text: '写作', link: '/reading/reading-writing/'},
         ]
     },
     {
-        text: '必学必会',
+        text: '沟通与表达',
         items: [
-            {text: 'Linux篇', link: '/must-know/linux/'},
+            {text: '非暴力沟通', link: '/expression/expression-nonviolent/'},
         ]
     },
     {
-        text: '内功心法',
+        text: '兴趣爱好',
         items: [
-            {text: '数据结构与算法', link: '/inner-mental/data-structure/'},
-            {text: '设计模式', link: '/inner-mental/design-pattern/'},
+            {text: '声乐', link: '/interest/interest-music/'},
+            {text: '吉他', link: '/interest/interest-guitar/'},
+            {text: '书法', link: '/interest/interest-calligraphy/'},
+            {text: '魔术', link: '/interest/interest-magic/'},
+            {text: '乒乓球', link: '/interest/interest-pingpong/'},
+            {text: '羽毛球', link: '/interest/interest-badminton/'},
+            {text: '篮球', link: '/interest/interest-basketball/'},
         ]
     },
     {
-        text: '大数据',
+        text: '生活与健康',
         items: [
-            {text: 'Hadoop', link: '/bigdata/hadoop/'},
-            {text: 'Hive', link: '/bigdata/hive/'},
+            {text: '睡眠管理', link: '/health/health-sleep/'},
+            {text: '身材管理', link: '/health/health-fitness/'},
         ]
     },
     {
-        text: 'PHP',
+        text: '个人理财',
         items: [
-            {text: 'PHP基础', link: '/php/php-base/'},
-            {text: 'PHP项目实战', link: '/php/php-projects/'},
+            {text: '基金', link: '/financial/financial-fund/'},
+            {text: '股票', link: '/financial/financial-stock/'},
         ]
     },
     {
