@@ -26,6 +26,7 @@ module.exports = [
         text: '沟通与表达',
         items: [
             {text: '非暴力沟通', link: '/expression/expression-nonviolent/'},
+            {text: '即兴演讲', link: '/expression/expression-speaking/'},
         ]
     },
     {

@@ -42,3 +42,6 @@ if [ $? -ne 0 ]; then
 fi
 
 cd -
+git add -A
+git commit -m ""
+git push -f git@github.com:chstudy/learning.git master:master
