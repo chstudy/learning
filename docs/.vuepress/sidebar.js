@@ -1,4 +1,6 @@
 module.exports = {
+    '/exam/exam-gwy/': require('../exam/exam-gwy/sidebar'),//gwy备考
+
     '/language/language-english/': require('../language/language-english/sidebar'),//英语
     '/language/language-japanese/': require('../language/language-japanese/sidebar'),//日语
     '/language/language-cantonese/': require('../language/language-cantonese/sidebar'),//粤语

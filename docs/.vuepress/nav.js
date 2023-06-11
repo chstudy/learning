@@ -1,6 +1,12 @@
 module.exports = [
     {text: '主页', link: '/index.html'},
     {
+        text: '备考',
+        items: [
+            {text: 'GWY', link: '/exam/exam-gwy/'},
+        ]
+    },
+    {
         text: '语言学习',
         items: [
             {text: '英语', link: '/language/language-english/'},

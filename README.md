@@ -23,4 +23,7 @@ vuepress build docs
 # or
 yarn build docs
 ```
-
+5、plugin
+```shell
+npm install -d vuepress-plugin-anchor-right
+```

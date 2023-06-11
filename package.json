@@ -25,6 +25,7 @@
   },
   "dependencies": {
     "moment": "^2.29.4",
+    "vuepress-plugin-anchor-right": "^0.0.1-beta.18",
     "vuepress-plugin-sitemap": "^2.3.1"
   },
   "repository": {
