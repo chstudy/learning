@@ -1,8 +1,8 @@
 ---
-title: JavaSE相关面试题
+title: 这是个问题
 author: 沧海
 date: '2022/11/22'
 ---
 <LastUpdated />
 
-# JavaSE
+# 声乐应该如何学习？

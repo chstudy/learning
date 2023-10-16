@@ -17,7 +17,7 @@ module.exports = [
     {
         text: '读书',
         items: [
-            {text: '学习成长', link: '/reading/reading-study/'},
+            {text: '学习', link: '/reading/reading-study/'},
             {text: '管理', link: '/reading/reading-manager/'},
             {text: '教育', link: '/reading/reading-education/'},
             {text: '思维', link: '/reading/reading-mind/'},
@@ -29,10 +29,10 @@ module.exports = [
         ]
     },
     {
-        text: '沟通与表达',
+        text: '百科笔记',
         items: [
-            {text: '非暴力沟通', link: '/expression/expression-nonviolent/'},
-            {text: '即兴演讲', link: '/expression/expression-speaking/'},
+            {text: '美食', link: '/notes/notes-cooking/'},
+            {text: '亲密关系', link: '/notes/notes-love/'},
         ]
     },
     {

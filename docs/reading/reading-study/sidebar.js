@@ -1,9 +1,11 @@
 module.exports = [
     {
-        title: '概念篇',
+        title: '学习',
         collapsable: true,
         children: [
-            '/reading/reading-study/notes/java-introduce',
+            '/reading/reading-study/notes/study',
+            '/reading/reading-study/notes/renzhitianxing',
+            '/reading/reading-study/notes/keyilianxi',
         ]
     }
 ]

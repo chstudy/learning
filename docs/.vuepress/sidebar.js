@@ -15,6 +15,8 @@ module.exports = {
     '/reading/reading-marketing/': require('../reading/reading-marketing/sidebar'), //营销
     '/reading/reading-writing/': require('../reading/reading-writing/sidebar'), //写作
 
+    '/interest/interest-music/': require('../interest/interest-music/sidebar'), //声乐
+
     '/health/health-sleep/': require('../health/health-sleep/sidebar'), //睡眠管理
     '/health/health-fitness/': require('../health/health-fitness/sidebar'), //身材管理
 
