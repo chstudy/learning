@@ -2,10 +2,12 @@ const fs = require('fs')
 const path = require('path');
 const nav = require("./nav.js");
 const sidebar = require("./sidebar.js");
+const footer = require("./footer.js");
+const extraSideBar = require("./extraSideBar.js");
 
 module.exports = {
-    title: '沧海自习室',
-    description: '感谢你那么好看还来到了沧海的自习室！',
+    title: '沧海Learning',
+    description: '欢迎来到沧海的Learning空间！',
     dest: './dist',
     base: '/learning/',
     devServer: {
@@ -15,9 +17,11 @@ module.exports = {
     },
     port: '7778',
     head: [
+        // 站点图标
         ['link', {rel: 'icon', href: '/img/chbcjs.png'}],
         ['link', {rel: 'stylesheet', href: '/css/style.css'}],
         ['script', {charset: 'utf-8', src: '/js/main.js'}],
+        // 百度统计
         [
             'script', {},
             `var _hmt = _hmt || [];
@@ -28,10 +32,18 @@ module.exports = {
                 s.parentNode.insertBefore(hm, s);
             })();`
         ],
-        ['meta', { name: 'baidu-site-verification', content: 'code-Hs9xO2GSUA' }],
+        // SEO
+        ['meta', { name: 'keywords', content: '沧海, 编程学习路线, 编程知识百科, Java, 编程导航, 前端, 后端, 全栈, 开发, 编程分享, 项目, IT, 求职, 面经' }],
     ],
+    // 生成永久链接
+    permalink: "/:slug",
+    // 监听文件变化，热更新
+    extraWatchFiles: [".vuepress/*.ts", ".vuepress/sidebars/*.ts"],
     markdown: {
+        // 开启代码块的行号
         lineNumbers: false,
+        // 支持 4 级以上的标题渲染
+        extractHeaders: ["h2", "h3", "h4", "h5", "h6"],
         extendMarkdown: md => {
             md.use(function (md) {
                 const fence = md.renderer.rules.fence
@@ -49,6 +61,8 @@ module.exports = {
         }
     },
     theme: 'reco',
+
+    // 主题配置
     themeConfig: {
         nav,
         sidebar,
@@ -62,8 +76,19 @@ module.exports = {
                 buttonText: '更新'
             }
         },
+
+        // GitHub 仓库位置
+        repo: "chstudy/learning",
+        docsBranch: "master",
+
+        // 编辑链接
         editLinks: true,
         editLinkText: '在 GitHub 上编辑此页 ！',
+
+        // 底部版权信息
+        footer,
+        // 额外右侧边栏
+        extraSideBar,
         // valineConfig: {
         //     appId: 'OmzEr7EfKyCiBv3El5QCwJYe-gzGzoHsz',
         //     appKey: 'WaJowe0aLDnpuBVsyZi5uEM6',
@@ -77,6 +102,16 @@ module.exports = {
         // }
     },
     plugins: [
+        ["@vuepress/back-to-top"],
+        // Google 分析
+        [
+            "@vuepress/google-analytics",
+            {
+                ga: "GTM-WVS9HM6W", // 补充自己的谷歌分析 ID，比如 UA-00000000-0
+            },
+        ],
+        // 图片点击放大
+        ["@vuepress/medium-zoom"],
         [
             '@vuepress/last-updated',
             {
@@ -85,6 +120,7 @@ module.exports = {
                 }
             }
         ],
+        // 代码复制
         [
             require('./vuepress-plugin-code-copy'),
             {
@@ -99,6 +135,52 @@ module.exports = {
                 minLength: 30, // 如果长度超过  30 个字符
             },
         ],
+        // 图片懒加载：https://github.com/tolking/vuepress-plugin-img-lazy
+        ["img-lazy"],
+        // 生成文章标签：https://github.com/zq99299/vuepress-plugin/tree/master/vuepress-plugin-tags
+        ["vuepress-plugin-tags"],
+        // 搜索引擎优化：https://github.com/lorisleiva/vuepress-plugin-seo
+        [
+            "seo",
+            {
+                siteTitle: (_, $site) => $site.title,
+                title: ($page) => $page.title,
+                description: ($page) =>
+                    $page.frontmatter.description || $page.description,
+                author: (_, $site) => $site.themeConfig.author || author,
+                tags: ($page) => $page.frontmatter.tags || tags,
+                type: ($page) => "article",
+                url: (_, $site, path) =>
+                    ($site.themeConfig.domain || domain || "") + path,
+                image: ($page, $site) =>
+                    $page.frontmatter.image &&
+                    (($site.themeConfig.domain &&
+                            !$page.frontmatter.image.startsWith("http")) ||
+                        "") + $page.frontmatter.image,
+                publishedAt: ($page) =>
+                    $page.frontmatter.date && new Date($page.frontmatter.date),
+                modifiedAt: ($page) => $page.lastUpdated && new Date($page.lastUpdated),
+            },
+        ],
+        // 自动生成站点地图：https://github.com/ekoeryanto/vuepress-plugin-sitemap
+        // [
+        //     "sitemap",
+        //     {
+        //         hostname: chstudy.gitee.io,
+        //     },
+        // ],
+        // 自动推送百度搜索引擎：https://github.com/IOriens/vuepress-plugin-baidu-autopush
+        ["vuepress-plugin-baidu-autopush"],
+        // RSS订阅：https://github.com/webmasterish/vuepress-plugin-feed
+        // [
+        //     "feed",
+        //     {
+        //         canonical_base: chstudy.gitee.io,
+        //         count: 10000,
+        //         // 需要自动推送的文档目录
+        //         posts_directories: [],
+        //     },
+        // ],
         [
             '@vuepress-reco/vuepress-plugin-bgm-player',
             {

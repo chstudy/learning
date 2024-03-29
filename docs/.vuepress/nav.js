@@ -29,10 +29,11 @@ module.exports = [
         ]
     },
     {
-        text: '百科笔记',
+        text: '学习笔记',
         items: [
-            {text: '美食', link: '/notes/notes-cooking/'},
+            {text: '表达&沟通', link: '/notes/notes-talking/'},
             {text: '亲密关系', link: '/notes/notes-love/'},
+            {text: '买菜做饭', link: '/notes/notes-cooking/'},
         ]
     },
     {
@@ -45,6 +46,7 @@ module.exports = [
             {text: '乒乓球', link: '/interest/interest-pingpong/'},
             {text: '羽毛球', link: '/interest/interest-badminton/'},
             {text: '篮球', link: '/interest/interest-basketball/'},
+            {text: '电影', link: '/interest/interest-movie/'},
         ]
     },
     {

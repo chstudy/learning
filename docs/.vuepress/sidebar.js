@@ -16,10 +16,13 @@ module.exports = {
     '/reading/reading-writing/': require('../reading/reading-writing/sidebar'), //写作
 
     '/interest/interest-music/': require('../interest/interest-music/sidebar'), //声乐
+    '/interest/interest-movie/': require('../interest/interest-movie/sidebar'), //电影
 
     '/health/health-sleep/': require('../health/health-sleep/sidebar'), //睡眠管理
     '/health/health-fitness/': require('../health/health-fitness/sidebar'), //身材管理
 
     '/financial/financial-fund': require('../financial/financial-fund/sidebar'), //基金
     '/financial/financial-stock': require('../financial/financial-stock/sidebar'), //股票
+
+    '/notes/notes-talking/': require('../notes/notes-talking/sidebar'), //表达&沟通
 }
